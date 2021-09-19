@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="/stylesheets/style-locationSelection.css" />
+    <!-- <link rel="stylesheet" href="/stylesheets/indexstyle.css" /> -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="header_wrapper">
+        <div class="ejs_header">
+          <div class="menu-btn">
+            <a href="#" class="brand">Holiday Resort</a>
+          </div>
+          <!-- <div class="navigation"> -->
+          <div class="navigation-items">
+            <a href="/holidayresort">Home</a>
+            <a href="/about">About</a>
+            <a href="/plan">Plan</a>
+          </div>
+          <!-- </div> -->
+        </div>
+
+        <div class="content">
+          <div class="main_point">Welcome</div>
+          <form class="form_item">
+            <input
+              class="serach_bar"
+              placeholder="Enter a city"
+              id="location"
+              name="location"
+            />
+            <div class="btn_container">
+              <button id="hotel" class="key">Hotel</button>
+              <button id="golf" class="key">Golf</button>
+              <button id="soccer" class="key">Soccer</button>
+              <button id="basketball" class="key">Basket-ball</button>
+              <button id="paintballing" class="key">Paint-ball</button>
+              <button id="skiing" class="key">Skiing</button>
+              <button id="windsurfing" class="key">Wind-surfing</button>
+              <button id="Astroturf-Pitch" class="key">Astroturf-Pitch</button>
+              <button id="volleyball" class="key">Volley-ball</button>
+              <button id="kids-play" class="key">Kids-play</button>
+              <button id="cinema" class="key">Cinema</button>
+              
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- <div class="demacating-pic"></div> -->
+
+          <div class="request">
+              <% data?.map((obj) => { %>
+                <div class="request-contain">
+                    <div class="pic-left">
+                    </div>
+                    <div class="chief">
+                        <div class="size">
+                          <img class = "pic" src="<%= obj.photoRef %>" alt="" />
+                        </div>
+                        <div class="div">
+                          <p class="item">Name: <%= obj.name %></p>
+                          <p class="item">Address: <%= obj.address %></p>
+                          <p class="item">Star Rating: <%= obj.rating %></p>
+                          <p class="item">Price: $ <%= obj.price %></p>
+                      </div>
+                  </div>
+                  <div class="pic-right">
+                  </div>
+                </div>
+              <% }) %>
+          </div>
+       </div>
+
+    <footer>
+      <!-- Footer -->
+    <div class="footer">
+      <!-- <div class="footer-el"> -->
+          <div class="footer-top">
+              <div class="foot first-column">
+                  <div class="logo-footer"><h2>LA CRUZE</h2></div>
+                  <div class="about-footer"><p>Your leisure is our delight. The La Cruz brand is located in Elegushi, Lekki, Lagos State. We operate as an online brand who connect our esteemed members to all the juciest deals to fun and adventurous places
+                      as ell as activities all over the Globe. We would bedelighted to meet your audacious cravings.</p>
+                  </div>
+                  <div class="follow">
+                      <p>Follow us on Twitter Facebook Instagram</p>
+                  </div>
+              </div>
+              <div class="foot second-column">
+                  <div class="links-footer"><h2>USEFUL LINKS</h2></div>
+                  <p>Activities</p>
+                  <p>Access and Membership</p>
+                  <p>Contact</p>
+              </div>
+              <div class="foot third-column">
+                  <div class="contact-footer"><h2>CONTACT US</h2></div>
+                      <p>Phone: +2348148882784</p>
+                      <p>WhatsApp: +2348148882784</p>
+                      <p>info@lacruz.gmail.ng</p>
+                  </div>
+              </div>
+              <div class="footer-bottom">
+                <!-- <hr> -->
+                <p class = "terms">Terms and Conditions | La CRUZE World wide</p>
+            </div>
+          </div>
+          
+      <!-- </div> -->
+  </div>
+    </footer>
+
+    <script>
+      const locate = document.querySelector('#location');
+      const hotelBtn = document
+        .getElementById('hotel')
+        .addEventListener('click', (e) => {
+          e.preventDefault();
+          const firstLocation = locate.value;
+          window.location = `http://localhost:3001/location-selection/?key=hotel&location=${firstLocation}`;
+        });
+      document.getElementById('golf').addEventListener('click', (e) => {
+        e.preventDefault();
+        const firstLocation = locate.value;
+        window.location = `http://localhost:3001/location-selection/?key=golf&location=${firstLocation}`;
+      });
+      document.getElementById('soccer').addEventListener('click', (e) => {
+        e.preventDefault();
+        const firstLocation = locate.value;
+        window.location = `http://localhost:3001/location-selection/?key=soccer&location=${firstLocation}`;
+      });
+      document.getElementById('basketball').addEventListener('click', (e) => {
+        e.preventDefault();
+        const firstLocation = locate.value;
+        window.location = `http://localhost:3001/location-selection/?key=basketball&location=${firstLocation}`;
+      });
+      document.getElementById('paintballing').addEventListener('click', (e) => {
+        e.preventDefault();
+        const firstLocation = locate.value;
+        window.location = `http://localhost:3001/location-selection/?key=paintballing&location=${firstLocation}`;
+      });
+      document.getElementById('skiing').addEventListener('click', (e) => {
+        e.preventDefault();
+        const firstLocation = locate.value;
+        window.location = `http://localhost:3001/location-selection/?key=skiing&location=${firstLocation}`;
+      });
+      document.getElementById('windsurfing').addEventListener('click', (e) => {
+        e.preventDefault();
+        const firstLocation = locate.value;
+        window.location = `http://localhost:3001/location-selection/?key=windsurfing&location=${firstLocation}`;
+      });
+      document.getElementById('Astroturf-Pitch').addEventListener('click', (e) => {
+        e.preventDefault();
+        const firstLocation = locate.value;
+        window.location = `http://localhost:3001/location-selection/?key=Astroturf-Pitch&location=${firstLocation}`;
+      });
+      document.getElementById('volleyball').addEventListener('click', (e) => {
+        e.preventDefault();
+        const firstLocation = locate.value;
+        window.location = `http://localhost:3001/location-selection/?key=volleyball&location=${firstLocation}`;
+      });
+      document.getElementById('kids-play').addEventListener('click', (e) => {
+        e.preventDefault();
+        const firstLocation = locate.value;
+        window.location = `http://localhost:3001/location-selection/?key=kids-play&location=${firstLocation}`;
+      });
+      document.getElementById('cinema').addEventListener('click', (e) => {
+        e.preventDefault();
+        const firstLocation = locate.value;
+        window.location = `http://localhost:3001/location-selection/?key=cinema&location=${firstLocation}`;
+      });
+    </script>
+  </body>
+
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheets/style-membership.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <title>La-cruze: Membership Page</title>
+  </head>
+  <body>
+    <div class="page_container">
+      <div class="header_wrapper">
+        <div class="header-container">
+          <h1 id="logo">Holiday Resort</h1>
+          <div class="nav-container">
+            <div class="page"><a href="/loginusers">Home</a></div>
+            <div class="page">
+              <span class="explore_btn"><a href="location-selection2">Explore</a></span>
+            </div>
+            <div class="page"><a href="/logout">Logout</a></div>
+          </div>
+        </div>
+        <div class="location">
+          <p class="destination_text">Your Next Destination?</p>
+          
+            <a href="location-selection2"> <input class="input-destination ddjk" type="button" value="TAKE ME"></a>
+           
+          
+        </div>
+      </div>
+    </div>
+    <!-- Header -->
+
+    <h2 class="main_text">Welcome to a world of unparalled pleasure</h2>
+    <!-- Activities Pricing Table -->
+    <div class="membership-listing"></div>
+
+    <div class="membership-pricing">
+      <div class="plan">
+        <h3 class="plan-title">Bronze Member</h3>
+        <div class="plan-cost">
+          <span class="plan-price">N4000</span
+          ><span class="plan-type">/ Anually</span>
+        </div>
+        <ul class="plan-features">
+          <li><i class="ion-checkmark"> </i>Admit 1 Adult</li>
+          <li><i class="ion-checkmark"> </i>30% of for additional adult</li>
+          <li>
+            <i class="ion-checkmark"> </i>30% Discount on Facilities and
+            acivities
+          </li>
+        </ul>
+      </div>
+      <div class="plan">
+        <h3 class="plan-title">Silver Member</h3>
+        <div class="plan-cost">
+          <span class="plan-price">N10000</span
+          ><span class="plan-type">/ Anually</span>
+        </div>
+        <ul class="plan-features">
+          <li><i class="ion-checkmark"> </i>Admit 2 Adults and 4 children</li>
+          <li><i class="ion-checkmark"> </i>40% off additional child</li>
+          <li>
+            <i class="ion-checkmark"> </i>40% discount on Facilities and
+            acivities
+          </li>
+        </ul>
+      </div>
+      <div class="plan featured">
+        <h3 class="plan-title">Gold Member</h3>
+        <div class="plan-cost">
+          <span class="plan-price">N15000</span
+          ><span class="plan-type">/ Anually</span>
+        </div>
+        <ul class="plan-features">
+          <li>
+            <i class="ion-checkmark"> </i>Admit 4 Adults and unlimited number of
+            children
+          </li>
+          <li>
+            <i class="ion-checkmark"> </i>60% discount on Facilities and
+            acivities
+          </li>
+          <li>
+            <i class="ion-checkmark"> </i>20% discount on Additional Family
+          </li>
+        </ul>
+      </div>
+      <div class="plan">
+        <h3 class="plan-title">Platinum Co-orporate Member</h3>
+        <div class="plan-cost">
+          <span class="plan-price">N75000</span
+          ><span class="plan-type">/ Anually</span>
+        </div>
+        <ul class="plan-features">
+          <li><i class="ion-checkmark"> </i>15 Staff Families</li>
+          <li>
+            <i class="ion-checkmark"> </i>Admits 2 Adults & 4 Children per
+            family
+          </li>
+          <li>
+            <i class="ion-checkmark"> </i>40% Discount on Facilities and
+            acivities
+          </li>
+          <li><i class="ion-checkmark"> </i>50% off for Additional Family</li>
+        </ul>
+      </div>
+      <div class="plan">
+        <h3 class="plan-title">Emerald Co-orporate Member</h3>
+        <div class="plan-cost">
+          <span class="plan-price">N100000</span
+          ><span class="plan-type">/ Anually</span>
+        </div>
+        <ul class="plan-features">
+          <li><i class="ion-checkmark"> </i>30 Staff Families</li>
+          <li>
+            <i class="ion-checkmark"> </i>Admits 2 Adults & Unlimited Number of
+            Children
+          </li>
+          <li><i class="ion-checkmark"> </i>50% off Additional Family</li>
+          <li>
+            <i class="ion-checkmark"> </i>60% Discount on Facilities and
+            acivities
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="main-content">
+      <h1>Choose a payment plan</h1>
+      <!-- <hr /> -->
+      
+      <div class='form_container'>
+        <form action="" method="POST" id="payForm">
+          <div class="class">
+            <label class= "label" for="">Full Name</label>
+            <input class = "input-field"
+              type="text"
+              id="fullName"
+              placeholder="Enter your Full Name"
+              required
+            />
+          </div>
+          <div class="class">
+              <label class= "label" for="">Phone Number</label>
+              <input class = "input-field"
+                type="number"
+                id="phoneNumber"
+                placeholder="Fill in your Phone Number here..."
+                required
+              />
+          </div>
+
+          <div class="class">
+            <label class= "label" for="">Email</label>
+            <input class = "input-field"
+              type="email"
+              id="email"
+              placeholder="Enter your email here..."
+              required
+            />
+          </div>
+
+          <div class="class">
+            <label class= "label" for="">Plan</label>
+            <input class = "input-field"
+              type="text"
+              id="email"
+              placeholder="Enter your membership plan here..."
+              required
+            />
+          </div>
+
+          <div class="class">
+            <label class= "label" for="">Membership Plan</label>
+            <input class = "input-field" type="text" id="amount" placeholder="fill in membership cost" />
+          </div>
+
+  
+          
+          <button type="button" class="btn">Pay Now</button>
+        </form>
+
+        <script src="https://checkout.flutterwave.com/v3.js"></script>
+         </div>
+    </section>
+
+    <!-- Footer -->
+     <div class="footer"> 
+     <div class="footer-el"> 
+     <div class="footer-top">
+                    <div class="foot first-column">
+                        <div class="logo-footer"><h2>LA CRUZE</h2></div>
+                        <div class="about-footer"><p>Your leisure is our delight. The La Cruz brand is located in Elegushi, Lekki, Lagos State. We operate as an online brand who connect our esteemed members to all the juciest deals to fun and adventurous places
+                            as ell as activities all over the Globe. We would bedelighted to meet your audacious cravings.</p>
+                        </div>
+                        <div class="follow">
+                            <p>Follow us on Twitter Facebook Instagram</p>
+                        </div>
+                    </div>
+                    <div class="foot second-column">
+                        <div class="links-footer"><h2>USEFUL LINKS</h2></div>
+                        <p>Activities</p>
+                        <p>Access and Membership</p>
+                        <p>Contact</p>
+                    </div>
+                    <div class="foot third-column">
+                        <div class="contact-footer"><h2>CONTACT US</h2></div>
+                            <p>Phone: +2348148882784</p>
+                            <p>WhatsApp: +2348148882784</p>
+                            <p>info@lacruz.gmail.ng</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom"> 
+     <hr> 
+     <p class = "terms">Terms and Conditions | La CRUZE World wide</p>
+    <!-- </div> -->
+    <!-- </div> -->
+   <script>
+              const btn = document.querySelectorAll('button');
+              btn.forEach((i)=>{
+
+              i.addEventListener('click', (e) => {
+                e.preventDefault()
+                FlutterwaveCheckout({
+                  public_key: 'FLWPUBK_TEST-fff91edde08e309a1d1bdaaa796d6b8c-X',
+                  tx_ref: 'kd_' + Math.floor(Math.random() * 1000000000 + 1),
+                  amount: document.getElementById('amount').value,
+                  currency: 'NGN',
+                  customer: {
+                    email: document.getElementById('email').value,
+                    phonenumber: document.getElementById('phoneNumber').value,
+                    name: document.getElementById('fullName').value,
+                  },
+                  callback: (data) => {
+                    console.log(data);
+                  },
+                });
+            });
+      })
+
+
+        
+    </script> 
+  </body>
+</html>
+

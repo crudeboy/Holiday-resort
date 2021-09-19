@@ -1,0 +1,15 @@
+{
+  "Users": {
+    "dbConfig": {
+      "host": "localhost",
+      "port": 5984,
+      "dbName": "mongodb+srv://dammydeji:kTSphnDBDEqUyvh3@cluster0.mebtj.mongodb.net/HolidayResort?retryWrites=true&w=majority",
+      "JWT_SECRET": "GUDdamiboy_66848884$",
+      "JWT_EXPIRES_IN": "90d",
+      "EMAIL_USERNAME": "",
+      "EMAIL_PASSWORD": "",
+      "EMAIL_HOST": "localhost",
+      "EMAIL_PORT": 587
+    }
+  }
+}

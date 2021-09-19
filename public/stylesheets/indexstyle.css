@@ -1,0 +1,644 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap");
+/* membership import */
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:800);
+/* p{
+    margin: 0px;
+} */
+/* body {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;;
+}
+*/
+p {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+}
+.header_wrapper {
+  background: linear-gradient(
+      rgba(136, 107, 107, 0.8),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(./images/pic4.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  background-size: cover;
+  /* height: 100vh; */
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: transparent;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+}
+.nav-container {
+  display: flex;
+  cursor: pointer;
+  color: white; /*The color of the font isn't changing*/
+}
+/* all navigation baar params */
+.page a {
+  text-decoration: none;
+  color: white;
+}
+.join_btn {
+  color: white;
+  background: greenyellow;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.explore_btn {
+  color: white;
+  background: #1a759f;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.page {
+  margin-right: 17px;
+  font-size: 1.3em;
+  color: #fff;
+}
+.page:hover {
+  text-decoration: underline;
+  transition: transform 2s;
+}
+span.join_btn:hover {
+  /* background-color: red; this does work */
+  /* transform: scale(2);  this doesn't work */
+  transition: transform 10s;
+  font-size: 22px;
+}
+span.explore_btn:hover {
+  /* background-color: red; this does work */
+  /* transform: scale(2);  this doesn't work */
+  font-size: 22px;
+  text-decoration: none;
+}
+.header-image {
+  width: 100%;
+  object-fit: contain;
+}
+/* location */
+.location {
+  /* margin: 250px 600px ; */
+  position: absolute;
+  top: 40%;
+  left: 25%;
+}
+.destination {
+  color: #ffffff;
+  font-size: 1.7em;
+}
+.destination_text {
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.input-destination {
+  /* width: 60%;
+    height: 50px; */
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  font-size: 17px;
+  color: white;
+  background-color: teal;
+  cursor: pointer;
+  text-decoration: none;
+}
+.input-destination a {
+  text-decoration: none;
+  color: white;
+}
+.input-destination:hover {
+  text-decoration: underline;
+}
+/* countries */
+.countries {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+}
+.countries-head {
+  margin-left: 30px;
+  font-size: 35px;
+  font-size: "Roboto", sans-serif;
+  font-weight: 300;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.countries-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.country {
+  border: none;
+  border-radius: 15px;
+  width: 30%;
+  height: 300px;
+  margin: 10px;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+.img1 {
+  background-image: linear-gradient(
+      rgba(136, 107, 107, 0.8),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("../countries/cairo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.country:hover {
+  transform: scale(1.2);
+  transition: transform 1s;
+}
+.img2 {
+  background-image: linear-gradient(
+      rgba(136, 107, 107, 0.8),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("../countries/cape-town.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.img3 {
+  background-image: linear-gradient(
+      rgba(136, 107, 107, 0.8),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("../countries/dubai.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.img4 {
+  background-image: linear-gradient(
+      rgba(136, 107, 107, 0.8),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("../countries/fuerventura.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.img5 {
+  background-image: linear-gradient(
+      rgba(136, 107, 107, 0.8),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("../countries/london.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.img6 {
+  background-image: linear-gradient(
+      rgba(136, 107, 107, 0.8),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("../countries/mauritius.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+/* Activities */
+.activities-wrapper {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+}
+/* .country:hover {
+  transform: scale(1.2);
+  transition: transform 1s;
+} */
+.activities-head {
+  margin-left: 30px;
+  font-size: 35px;
+  font-size: "Roboto", sans-serif;
+  font-weight: 300;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.activity {
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 7px;
+  width: 20%;
+  height: 300px;
+  margin: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  height: 350px;
+  width: 500px;
+  /* cursor: pointer; */
+}
+.activity-pic {
+  border-radius: 10px 10px 10px 0px;
+  color: white;
+  /* font-family: 'Roboto', sans-serif; */
+  font-size: 1.2em;
+}
+.activitypic1 {
+  background-image: linear-gradient(
+      rgba(133, 162, 167, 0.8),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("../images/activities/astroturf.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60%;
+}
+.activitypic2 {
+  background-image: linear-gradient(
+      rgba(133, 162, 167, 0.8),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("../images/activities/basketball2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60%;
+}
+.activitypic3 {
+  background-image: linear-gradient(
+      rgba(133, 162, 167, 0.8),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("../images/activities/beach-soccer.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60%;
+}
+.activitypic4 {
+  background-image: linear-gradient(
+      rgba(133, 162, 167, 0.8),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("../images/activities/coastline-walk.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60%;
+}
+.activitypic5 {
+  background-image: linear-gradient(
+      rgba(133, 162, 167, 0.8),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("../images/activities/golf.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60%;
+}
+.activitypic6 {
+  background-image: linear-gradient(
+      rgba(133, 162, 167, 0.8),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("../images/activities/jet-skiing.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60%;
+}
+.activitypic7 {
+  background-image: linear-gradient(
+      rgba(133, 162, 167, 0.8),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("../images/activities/kidsplay.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60%;
+}
+.activitypic8 {
+  background-image: linear-gradient(
+      rgba(133, 162, 167, 0.8),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("../images/activities/paintball.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60%;
+}
+.activitypic9 {
+  background-image: linear-gradient(
+      rgba(133, 162, 167, 0.8),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("../images/activities/volleyball.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60%;
+}
+.activitypic10 {
+  background-image: linear-gradient(
+      rgba(133, 162, 167, 0.8),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("../images/activities/windsurfing.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60%;
+}
+/* footer */
+.footer {
+  /* margin-top: 50px; */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50vh;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  /* margin: auto; */
+  /* margin-right: 50px;
+     margin-left: 50px; */
+  background-color: #0096c7;
+}
+.footer-top {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  /* margin: auto; */
+}
+
+.foot {
+  /* width: 30%; */
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+}
+.first-column {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.second-column .third-column {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+hr {
+  margin: 0px;
+  background-color: #000000;
+  padding: 0px;
+}
+.footer-bottom {
+  width: 65%;
+  margin: auto;
+  background-color: #0096c7;
+}
+p.terms {
+  float: right;
+  margin: 0px;
+}
+/* Pricing page */
+/* Acitivity Table */
+.activity-pricing {
+  width: 80%;
+  margin: auto;
+}
+.activity-table {
+  border: 1px solid #ccc;
+  margin-bottom: 50px;
+}
+.table-header {
+  font-size: 1.8em;
+  margin: 30px;
+}
+.harsh-background {
+  background-color: #ccc;
+}
+/* membership page */
+/* ///////////////////////////////////////// */
+.maintext {
+  margin: auto;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 2em;
+}
+.membership-pricing {
+  font-family: "Raleway", Arial, sans-serif;
+  color: #000000;
+  text-align: center;
+  font-size: 16px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 40px 5px;
+  /* display: flex;
+  justify-content: center;
+  align-content: center; */
+  margin: auto;
+  margin-top: 150px;
+}
+.membership-pricing .plan {
+  margin: 0px;
+  width: 20%;
+  position: relative;
+  float: left;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+.membership-pricing * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.membership-pricing header {
+  position: relative;
+}
+.membership-pricing .plan-title {
+  position: relative;
+  top: 0;
+  font-weight: 800;
+  padding: 5px 15px;
+  margin: 0 auto;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin: 0;
+  display: inline-block;
+  background-color: #0096c7;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.membership-pricing .plan-cost {
+  padding: 0px 10px 20px;
+}
+.membership-pricing .plan-price {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 2.4em;
+  color: #34495e;
+}
+.membership-pricing .plan-type {
+  opacity: 0.6;
+}
+.membership-pricing .plan-features {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  list-style: outside none none;
+  font-size: 0.8em;
+}
+.membership-pricing .plan-features li {
+  border-top: 1px solid #d2d7e2;
+  padding: 10px 5%;
+}
+.membership-pricing .plan-features li:nth-child(even) {
+  background: rgba(0, 0, 0, 0.08);
+}
+.membership-pricing .plan-features i {
+  margin-right: 8px;
+  opacity: 0.4;
+}
+.membership-pricing .plan-select {
+  border-top: 1px solid #d2d7e2;
+  padding: 10px 10px 0;
+}
+.membership-pricing .plan-select a {
+  background-color: #0096c7;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%);
+  font-weight: 800;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.membership-pricing .plan-select a:hover {
+  background-color: #46627f;
+}
+.membership-pricing .featured {
+  margin-top: -10px;
+  background-color: #34495e;
+  color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+.membership-pricing .featured .plan-title,
+.membership-pricing .featured .plan-price {
+  color: #ffffff;
+}
+.membership-pricing .featured .plan-cost {
+  padding: 10px 10px 20px;
+}
+.membership-pricing .featured .plan-features li {
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+.membership-pricing .featured .plan-select {
+  padding: 20px 10px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+@media only screen and (max-width: 767px) {
+  .membership-pricing .plan {
+    width: 50%;
+  }
+  .membership-pricing .plan-title,
+  .membership-pricing .plan-select a {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  .membership-pricing .plan-cost,
+  .membership-pricing .featured .plan-cost {
+    padding: 20px 10px 20px;
+  }
+  .membership-pricing .plan-select,
+  .membership-pricing .featured .plan-select {
+    padding: 10px 10px 10px;
+  }
+  .membership-pricing .featured {
+    margin-top: 0;
+  }
+}
+/* membership pricing responsiveness */
+@media only screen and (max-width: 440px) {
+  .membership-pricing .plan {
+    width: 100%;
+  }
+}

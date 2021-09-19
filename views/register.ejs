@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="./stylesheets/register.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form method="post" class="form" id="createAccount" action="/register">
+        <div class="form__input-error-message">
+          <% if (message) { %>
+          <h2><%= message %></h2>
+          <% } %>
+        </div>
+        <h1 class="form__title">Create Account</h1>
+        <div class="form__message form__message--error"></div>
+        <div class="form__input-group">
+          <input
+            type="text"
+            id="signupUsername"
+            class="form__input"
+            autofocus
+            placeholder="Username"
+            name="name"
+          />
+        </div>
+        <div class="form__input-group">
+          <input
+            type="text"
+            id="signupEmail"
+            class="form__input"
+            autofocus
+            placeholder="Email Address"
+            name="email"
+            required
+          />
+        </div>
+        <div class="email error"></div>
+        <div class="form__input-group">
+          <input
+            type="password"
+            id="signupPassword"
+            class="form__input"
+            autofocus
+            placeholder="Password"
+            name="password"
+            required
+          />
+          <div class="form__input-error-message"></div>
+        </div>
+        <!-- <div class="form__input-group">
+    <input type="password" id="signupConfirmPassword"  class="form__input" autofocus placeholder="Confirm Password" name="password" required>
+    <div class="form__input-error-message"></div>
+    
+   </div> -->
+        <div class="password error"></div>
+        <input
+          class="form__button"
+          type="submit"
+          id="signupSubmit"
+          value="Sign up"
+        />
+        <p class="form__text">
+          <a class="form__link" href="./login" id="./login"
+            >Already have an account? Sign in</a
+          >
+        </p>
+      </form>
+    </div>
+    <!-- <script>
+      const form = document.querySelector('form');
+      const emailError = document.querySelector('.email.error');
+      const passwordError = document.querySelector('.password.error');
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        // reset errors
+        emailError.textContent = '';
+        passwordError.textContent = '';
+        // get values
+        const name = form.name.value
+        const email = form.email.value;
+        const password = form.password.value;
+        try {
+          const data = await res.json();
+          console.log(data);
+          if (data.errors) {
+            emailError.textContent = data.errors.email;
+            passwordError.textContent = data.errors.password;
+          }
+          if (data.user) {
+            location.assign('/');
+          }
+        }
+        catch (err) {
+          console.log(err);
+        }
+      });
+    </script> -->
+  </body>
+</html>
